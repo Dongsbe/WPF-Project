@@ -30,6 +30,39 @@ namespace RobotMonitoringSystem
         {
             MainHeader.SetUserName(userName);
         }
+
+        private void RobotManagementView_Checked(object sender, RoutedEventArgs e)
+        {
+            MainViewport.Content = new RobotManagementView();
+        }
+
+        private void DashboardView_Checked(object sender, RoutedEventArgs e)
+        {
+            if (MainViewport == null)
+                return;
+
+            MainViewport.Content = new DashboardView();
+        }
+
+        private void TaskManagementView_Checked(object sender, RoutedEventArgs e)
+        {
+            MainViewport.Content = new TaskManagementView();
+        }
+
+        private void TaskControlView_Checked(object sender, RoutedEventArgs e)
+        {
+            MainViewport.Content = new TaskControlView();
+        }
+
+        private void AlarmManagementView_Checked(object sender, RoutedEventArgs e)
+        {
+            MainViewport.Content = new AlarmManagementView();
+        }
+
+        private void HistoryView_Checked(object sender, RoutedEventArgs e)
+        {
+            MainViewport.Content = new HistoryView();
+        }
     }
 
 }

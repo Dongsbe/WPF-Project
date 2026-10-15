@@ -84,7 +84,8 @@
                                 Margin="0,12,0,0">
                         <RadioButton GroupName="SideMenu"
                                  Style="{StaticResource SideMenuStyle}"
-                                 IsChecked="True">
+                                 IsChecked="True"
+                                 Checked="DashboardView_Checked">
                             <StackPanel Orientation="Horizontal">
                                 <Image Source="/icon/home.png"
                                        Style="{StaticResource SideMenuIconStyle}"/>
@@ -94,7 +95,8 @@
                         </RadioButton>
 
                         <RadioButton GroupName="SideMenu"
-                                     Style="{StaticResource SideMenuStyle}">
+                                     Style="{StaticResource SideMenuStyle}"
+                                     Checked="RobotManagementView_Checked">
                             <StackPanel Orientation="Horizontal">
                                 <Image Source="/icon/robot-arm.png"
                                        Style="{StaticResource SideMenuIconStyle}"/>
@@ -104,7 +106,8 @@
                         </RadioButton>
 
                         <RadioButton GroupName="SideMenu"
-                                     Style="{StaticResource SideMenuStyle}">
+                                     Style="{StaticResource SideMenuStyle}"
+                                     Checked="TaskManagementView_Checked">
                             <StackPanel Orientation="Horizontal">
                                 <Image Source="/icon/list.png"
                                        Style="{StaticResource SideMenuIconStyle}"/>
@@ -114,7 +117,8 @@
                         </RadioButton>
 
                         <RadioButton GroupName="SideMenu"
-                                     Style="{StaticResource SideMenuStyle}">
+                                     Style="{StaticResource SideMenuStyle}"
+                                     Checked="TaskControlView_Checked">
                             <StackPanel Orientation="Horizontal">
                                 <Image Source="/icon/monitoring.png"
                                        Style="{StaticResource SideMenuIconStyle}"/>
@@ -124,7 +128,8 @@
                         </RadioButton>
 
                         <RadioButton GroupName="SideMenu"
-                                     Style="{StaticResource SideMenuStyle}">
+                                     Style="{StaticResource SideMenuStyle}"
+                                     Checked="AlarmManagementView_Checked">
                             <StackPanel Orientation="Horizontal">
                                 <Image Source="/icon/bell.png"
                                        Style="{StaticResource SideMenuIconStyle}"/>
@@ -134,7 +139,8 @@
                         </RadioButton>
 
                         <RadioButton GroupName="SideMenu"
-                                     Style="{StaticResource SideMenuStyle}">
+                                     Style="{StaticResource SideMenuStyle}"
+                                     Checked="HistoryView_Checked">
                             <StackPanel Orientation="Horizontal">
                                 <Image Source="/icon/history.png"
                                        Style="{StaticResource SideMenuIconStyle}"/>
@@ -144,6 +150,11 @@
                         </RadioButton>
                     </StackPanel>
                 </Border>
+
+                <ContentControl x:Name="MainViewport"
+                                Grid.Column="1">
+                    <local:DashboardView/>
+                </ContentControl>
             </Grid>
         </Grid>
     </Border>

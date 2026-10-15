@@ -24,16 +24,26 @@ namespace RobotMonitoringSystem
             InitializeComponent();
         }
 
-        private void UsernameInput_TextChanged(object sender, TextChangedEventArgs e)
+        private void LoginButton_Click(object sender, RoutedEventArgs e)
         {
+            TryLogin();
+        }
+
+        private void PasswordInput_KeyDown(object sender, KeyEventArgs e)
+        {
+            if(e.Key == Key.Enter)
+            {
+                e.Handled = true;
+                TryLogin();
+            }
 
         }
 
-        private void LoginButton_Click(object sender, RoutedEventArgs e)
+        private void TryLogin()
         {
             // TODO : 로그인 화면 재개발(관리자 id: root, password: root로 임시개발)
 
-            if(UsernameInput.Text == "root" && PasswordInput.Password == "root")
+            if (UsernameInput.Text == "root" && PasswordInput.Password == "root")
             {
                 MainWindow mainWindow = new MainWindow("관리자");
                 mainWindow.Show();

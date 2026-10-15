@@ -83,11 +83,17 @@ namespace RobotMonitoringSystem
         {
             Window window = Window.GetWindow(this);
 
-            if (window != null &&
-                e.ButtonState == MouseButtonState.Pressed)
+            if (window == null)
+                return;
+
+            if(e.ClickCount == 2)
             {
-                window.DragMove();
+                if (window.WindowState == WindowState.Maximized)
+                    window.WindowState = WindowState.Normal;
+                else
+                    window.WindowState = WindowState.Maximized;
             }
+
         }
     }
 }

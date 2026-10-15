@@ -107,6 +107,7 @@
                                          FontSize="15"
                                          Padding="12, 0"
                                          PasswordChar="*"
+                                         KeyDown="PasswordInput_KeyDown"
                                          VerticalAlignment="Center"
                                          Background="Transparent"
                                          BorderThickness="0"/>
