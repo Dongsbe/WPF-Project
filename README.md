@@ -34,7 +34,7 @@
 
 ## 실행 방법
 
-1. Visual Studio에서 `2. 소스코드/RobotMonitoringSystem/RobotMonitoringSystem.csproj`를 엽니다.
+1. Visual Studio에서 `2. SourceCode/RobotMonitoringSystem/RobotMonitoringSystem.csproj`를 엽니다.
 2. .NET Framework 4.7.2 개발자 팩이 설치되어 있는지 확인합니다.
 3. 솔루션을 빌드한 다음 실행합니다.
 4. 현재 로그인 화면 테스트 값은 아이디 `root`, 비밀번호 `root`입니다.
@@ -43,9 +43,9 @@
 
 ## 기획 문서
 
-- [기획 문서 PDF](1.%20기획문서/산업용%20로봇%20작업%20관제%20및%20관리%20시뮬레이션%20시스템%20기획문서.pdf)
-- [기획 문서 HWP](1.%20기획문서/산업용%20로봇%20작업%20관제%20및%20관리%20시뮬레이션%20시스템%20기획문서.hwp)
-- [화면·설계 이미지](1.%20기획문서/0.Image/)
+- [기획 문서 PDF](1.%20PlanningDocs/산업용%20로봇%20작업%20관제%20및%20관리%20시뮬레이션%20시스템%20기획문서.pdf)
+- [기획 문서 HWP](1.%20PlanningDocs/산업용%20로봇%20작업%20관제%20및%20관리%20시뮬레이션%20시스템%20기획문서.hwp)
+- [화면·설계 이미지](1.%20PlanningDocs/0.Image/)
 
 기획 자료에는 요구사항, 화면 구성, 데이터베이스 설계 및 시스템 구조가 포함됩니다.
 
@@ -61,9 +61,9 @@
 
 ```text
 .
-├─ 1. 기획문서/
+├─ 1. PlanningDocs/
 │  └─ 0.Image/
-└─ 2. 소스코드/
+└─ 2. SourceCode/
    └─ RobotMonitoringSystem/
       ├─ App.xaml
       ├─ CommonHeader.xaml
